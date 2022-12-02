@@ -68,7 +68,7 @@ namespace Tetris_Game
                 grid[r,c] = 0;  
             }
         }
-        public void ClearFullRows()
+        public int ClearFullRows()
         {
             int cleared = 0;
             for(int r= Rows -1; r >=0; r--)
@@ -76,7 +76,7 @@ namespace Tetris_Game
                 if (IsRowFull(r))
                 {
                     clearTheRow(r);
-                    cleared++;
+                    cleared++;  
                 } 
                 else if (cleared > 0)
                 {
