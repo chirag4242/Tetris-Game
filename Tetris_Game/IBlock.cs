@@ -17,7 +17,7 @@ namespace Tetris_Game
             new Position[] {new(0,1),new(1,1),new(2,1),new(3,1)}
         };
         public override int Id => 1;
-        protected override Position StartOffset => new Position(-1,3);
+        protected override Position StartOffset => new Position(0,3);
         protected override Position[][] Tiles => tiles;
 
     }
