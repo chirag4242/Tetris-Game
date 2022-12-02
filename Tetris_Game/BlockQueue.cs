@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Tetris_Game
 {
@@ -33,5 +34,7 @@ namespace Tetris_Game
             } while (block.Id== NextBlock.Id);
             return block;
         } 
+        
+       
     }
 }
